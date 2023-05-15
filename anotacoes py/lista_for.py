@@ -81,9 +81,6 @@ lista = ["a", "b", "c", "d", "i","o", "h"]
 
 
 
-
-
-
 #exemplo em aula alterando valor da lista
 numeros = [0,0,0,0,0,0,0]
 for elem in numeros:
@@ -94,3 +91,13 @@ print(numeros)
 for i in range(len(numeros)):
     numeros[i] = 1
 print(numeros)
+
+
+
+#Achar os numeros pares e fazer uma lista com os q não são pares
+numeros = [12,234,43,54,7,234423,51,435354,5,6]
+pares = 0
+for elem in numeros:
+    if elem%2==0:
+        pares += 1
+numeros_2 = [2435,56,56,34,43,2,45456,54]
