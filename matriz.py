@@ -33,3 +33,20 @@ for i in range(len(matriz[0])):
     for j in range(len(matriz[0])):
         matriz[i][j] = 0
 print(matriz)
+
+#diagonal é i = j 
+
+#tranformar todos os numeros abaixo da diogonal em 1
+matriz = [[0,0,0,0,0],
+          [0,0,0,0,0],
+          [0,0,0,0,0],
+          [0,0,0,0,0],
+          [0,0,0,0,0]]
+
+#matriz = np.array(matriz)
+print(matriz)
+for i in range(len(matriz)):
+    for j in range(len(matriz[0])):
+        if j<i:
+            matriz[i][j] =1
+            
