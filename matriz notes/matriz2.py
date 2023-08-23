@@ -88,3 +88,14 @@ for i in range (len(triangular)):
 
 print()
 mostra_matriz(triangular)
+
+
+#Transposição de matriz
+def transpoe_matriz(m):
+    for i in range(len(m)):
+        for j in range(i):
+            aux = m[i][j]
+            m[i][j]= m[j][i]
+            m[j][i] = aux
+
+        return mostra_matriz(m)
