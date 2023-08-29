@@ -35,7 +35,6 @@ for i in range(len(matriz[0])):
 print(matriz)
 
 #diagonal é i = j 
-
 #tranformar todos os numeros abaixo da diogonal em 1
 matriz = [[0,0,0,0,0],
           [0,0,0,0,0],

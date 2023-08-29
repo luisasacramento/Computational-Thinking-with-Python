@@ -24,11 +24,17 @@ def soma_lista(lista):
         soma+=elem
     return soma
 
+def soma_elementos(vetor):
+    soma = 0
+    for i in range(len(vetor)):
+        soma += vetor[i]
+    return soma
+
 
 alunos = 10
 notas = cria_matriz_aleatoria(5,alunos)
 pesos = [1,2,3,2,1]
-soma_pesos = soma_lista(pesos)
+soma_pesos = soma_elementos(pesos)
 medias = []
 mostra_matriz(notas)
 for j in range(alunos):

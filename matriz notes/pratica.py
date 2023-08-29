@@ -24,7 +24,7 @@ print()
 
 matriz2 = cria_matriz(5,10)
 for i in range(len(matriz2)):
-    for j in range(len(matriz1[0])):
+    for j in range(len(matriz2[0])):
         if j%2 ==0:
             matriz2[i][j]=1
 mostra_matriz(matriz2)
