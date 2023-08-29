@@ -25,23 +25,19 @@ for i in range(10):
         numeros["impares"].append(i)
 print(numeros)
 
-modelos = {'carros': ['fiesta', 'celta', 'jeep'],
-           'precos': [20.000, 50.000, 40.000] }
+import pandas as pd
+carros = {"modelos":[], "precos":[]}
+while True:
+    pergunta = input("Vc quer adiocionar mais alguma coisa")
+    if pergunta == "s":
+        for key in carros.keys():
+            info = input(f"Diga o {key}: ")
+            carros[key].append(info)
+    else:
+        print("cadastro finalizado!")
+        print(pd.DataFrame(carros))
+        break
 
-print(acha_maior(modelos['precos'], modelos['carros']))
-
-
-modelos = {'carros': ['fiesta', 'celta', 'jeep'],
-           'precos': [20.000, 50.000, 40.000] }
-pergunta = input('Quer cadstrar mais um carro')
-maior = modelos['precos'][0]
-indice_maior = 0 
-for i in range(len(modelos['precos'])):
-    if modelos['precos'][i] > maior:
-        indice_maior = i
-        maior = modelos['precos'][i]
-print(f"O carro mais caro é o {modelos['modelo'][indice_maior]}"
-      f"e custa {modelos['precos'][indice_maior]}")
 
 
 
