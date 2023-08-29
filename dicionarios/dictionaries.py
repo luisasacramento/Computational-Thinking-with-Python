@@ -50,15 +50,11 @@ print(acha_maior(modelos['precos'], modelos['carros']))
 
 modelos = {'carros': ['fiesta', 'celta', 'jeep'],
            'precos': [20.000, 50.000, 40.000] }
-maior = carros['precos'][0]
+maior = modelos['precos'][0]
 indice_maior = 0 
-for i in range(len(carros['precos'])):
-    if carros['precos'][i] > maior:
+for i in range(len(modelos['precos'])):
+    if modelos['precos'][i] > maior:
         indice_maior = i
-        maior = carros['precos'][i]
-print(f"O carro mais caro é o {carros['modelo'][indice_maior]}"
-      f"e custa {carros['precos'][indice_maior]}")
-
-import pandas as pd 
-modelos['potencia'] = [10,10000,30]
-print(f"A potencia do carro mais caro ")
+        maior = modelos['precos'][i]
+print(f"O carro mais caro é o {modelos['modelo'][indice_maior]}"
+      f"e custa {modelos['precos'][indice_maior]}")
