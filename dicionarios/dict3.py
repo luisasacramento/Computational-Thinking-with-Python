@@ -8,6 +8,7 @@ whiskeys = {
     'marca' : ['Jack Daniels','White Horse','Passport','Johnnie Walker','Chanceler']
 }
 print(pd.DataFrame(whiskeys))
+
 def forca_opcao(msg,lista_opcoes):
     resposta = input(msg)
     while resposta not in lista_opcoes:
