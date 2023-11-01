@@ -39,3 +39,18 @@ def checa_numer_recursivo():
         return chaca_numero()
     return num
 
+
+#busca binária
+
+def acha_indice(num, inicio, fim, lista):
+    indice_chute = (inicio + fim)/2
+    if lista[indice_chute] != num:
+        if lista[indice_chute] > num:
+            fim = indice_chute
+        else:
+            inicio = indice_chute
+            return acha_indice(num, inicio, fim,lista)
+        return indice_chute
+    
+lista = [4,5,6,7,8,9,10,11]
+print(acha_indice(9,0,len(lista), lista))
