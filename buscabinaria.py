@@ -54,3 +54,20 @@ def acha_indice(num, inicio, fim, lista):
     
 lista = [4,5,6,7,8,9,10,11]
 print(acha_indice(9,0,len(lista), lista))
+
+
+#quicksort algoritmo 
+
+def quick_sort(lista):
+    if len(lista)<=1:
+        return lista
+    else:
+        pivo = lista[0]
+        menores = [elem for elem in lista if elem < pivo]
+        maiores = [elem for elem in lista if elem > pivo]
+        menores_ordenados = quick_sort(menores)
+        maiores_ordenados = quick_sort(maiores)
+        print(menores, pivo, maiores)
+        return menores_ordenados + [pivo] + maiores_ordenados
+ 
+umalista = [4,2,6,1,7,0,3]     
