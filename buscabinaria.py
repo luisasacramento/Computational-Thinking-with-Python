@@ -70,4 +70,4 @@ def quick_sort(lista):
         print(menores, pivo, maiores)
         return menores_ordenados + [pivo] + maiores_ordenados
  
-umalista = [4,2,6,1,7,0,3]     
+lista = [4,2,6,1,7,0,3]     
